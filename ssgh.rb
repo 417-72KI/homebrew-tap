@@ -1,17 +1,17 @@
 class Ssgh < Formula
   desc "Deliver stars on your behalf"
   homepage "https://github.com/417-72KI/SSGH"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
   head "https://github.com/417-72KI/SSGH.git", branch: "main"
 
   on_macos do
-      url "https://github.com/417-72KI/SSGH/releases/download/1.1.0/ssgh-macos-v1.1.0.zip"
-      sha256 "a95db7a9b1a9df3d861e51801ae486009711067c5d7d18812482962256ec7990"
+      url "https://github.com/417-72KI/SSGH/releases/download/1.1.1/ssgh-macos-v1.1.1.zip"
+      sha256 "582b1e14c0a80c12d89078b104d9e59a3d62bccc288340df1ad3e7b571844376"
   end
   on_linux do
-      url "https://github.com/417-72KI/SSGH/releases/download/1.1.0/ssgh-linux-v1.1.0.zip"
-      sha256 "45cef2890d1ac5676725cd281039d3149fbd4c5ab88ca0b8fb604b2fdd12e595"
+      url "https://github.com/417-72KI/SSGH/releases/download/1.1.1/ssgh-linux-v1.1.1.zip"
+      sha256 "c5a25996c49289b9f5d4322c96afe4b945909bb0728638ad09bc7e64893aa4d9"
   end
 
   def install
