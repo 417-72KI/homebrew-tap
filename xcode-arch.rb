@@ -1,10 +1,10 @@
 class XcodeArch < Formula
   desc "Set `Open using Rosetta` option on Xcode easily for M1 mac"
   homepage "https://github.com/417-72KI/xcode-arch"
-  version "0.0.1"
+  version "0.0.2"
 
   url "https://github.com/417-72KI/xcode-arch/archive/#{version}.tar.gz"
-  sha256 "e8b5ccf00f36142c7813e1f62afb75850dd6e420cf666d93c34c0862fa04a9c8"
+  sha256 "bcfb2e2d949a54fe8f95e73115a332a505ac99c86361201ae3d4b84acc954a13"
 
   license "MIT"
   head "https://github.com/417-72KI/xcode-arch.git", branch: "main"
