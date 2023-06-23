@@ -1,27 +1,26 @@
 class Ssgh < Formula
   desc "Deliver stars on your behalf"
   homepage "https://github.com/417-72KI/SSGH"
-  version "1.1.1"
+  version "1.2.0"
 
   on_macos do
     url "https://github.com/417-72KI/SSGH/archive/#{version}.tar.gz"
-    sha256 "6ca4ab104a843a7424db057524446e7d69519de6088aba7bb97c9b10d2de4d86"
-    depends_on :xcode => ["13.2", :build]
+    sha256 "d6cd10befe3e91425df8e0cd4c964e3b3340b9f0253538811cdb1859277ac1a9"
+    depends_on :xcode => ["13.3", :build]
   end
   on_linux do
     url "https://github.com/417-72KI/SSGH/releases/download/#{version}/ssgh-linux-v#{version}.zip"
-    sha256 "c5a25996c49289b9f5d4322c96afe4b945909bb0728638ad09bc7e64893aa4d9"
+    sha256 "31ad5075346f9270fca4e01dbaabad5e61caa6213a9bcbf5885832a863f3d916"
   end
   license "MIT"
   head "https://github.com/417-72KI/SSGH.git", branch: "main"
 
-
   def install
     if OS.mac?
-      system 'swift', 'build', '--disable-sandbox', '-c', 'release', '-Xswiftc', '-suppress-warnings'
-      bin.install '.build/release/ssgh'
+      system "swift", "build", "--disable-sandbox", "-c", "release", "-Xswiftc", "-suppress-warnings"
+      bin.install ".build/release/ssgh"
     elsif OS.linux?
-      bin.install 'ssgh'
+      bin.install "ssgh"
     end
   end
 
