@@ -3,6 +3,8 @@ class AssetCatalogConverter < Formula
   homepage "https://github.com/417-72KI/AssetCatalogConverter"
   version "0.1.0"
 
+  deprecate! date: "2023-09-24", because: "renamed to `r2acconverter`"
+
   on_macos do
     url "https://github.com/417-72KI/AssetCatalogConverter/archive/#{version}.tar.gz"
     sha256 "b4022fd9995d1ff9c427f11a4a4f107563d57198bbc4f528e34964c691cb60ae"
